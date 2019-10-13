@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,7 +68,7 @@ public class LoginFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View rootView =
-                inflater.inflate(R.layout.fragment_logiin, container, false);
+                inflater.inflate(R.layout.fragment_login, container, false);
         return rootView;
     }
 

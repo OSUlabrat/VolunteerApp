@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/VolSignUpHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="?android:listSeparatorTextViewStyle"
+        android:text="@string/sign_up_vol"
+        android:gravity="center"
+        android:textSize="16pt"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/VolNameSignUpField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:text=""
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/VolEmailSignUpField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:text=""
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/VolPassSignUpField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:text=""
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/required"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/required"
+        />
+
+    <Button
+        android:id="@+id/VolSignUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        />
 
 </LinearLayout>
