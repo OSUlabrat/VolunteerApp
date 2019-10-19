@@ -1,7 +1,10 @@
 package com.mrpanda2.volunteerapp;
 import android.content.Context;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.Date;
 public class EventList {
     private static EventList sEventList;
     private List<Event> mEvents;
@@ -12,7 +15,6 @@ public class EventList {
         }
         return sEventList;
     }
-
     public List<Event> getEvents(){
         return mEvents;
     }
@@ -26,11 +28,14 @@ public class EventList {
         return null;
     }
     private EventList(Context context){
-        for (int i=0; i < 30; i++){
+        mEvents = new ArrayList<>();
+        for (int i=1; i < 30; i++){
             Event event = new Event();
+            Date date = new Date(2020,1,i);
             event.setName("Event #" + i);
             event.setTime("12:00");
             event.setLocation("OSU");
+            event.setDate(date);
             mEvents.add(event);
         }
     }
